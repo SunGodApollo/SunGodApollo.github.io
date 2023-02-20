@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Mynerve&family=Oswald:wght@200&family=Roboto&display=swap" rel="stylesheet">
+    <title>Treasure Hunt</title>
+    <h1>Treasure Hunt</h1>
+    <img src="https://freesvg.org/img/money-3221936.png" height="300px">
+    <link rel="stylesheet" href="styles.css"/>
+    <h2>A Fun Game!</h2>
+</head>
+<body>
+
+    <div class="game-rules">
+        <ol>
+        <li>Click the boxes to reveal what's on the map</li>
+        <li>If you click on the bomb, you lose.</li>
+        <li>If you click on the treasure, you win!</li>
+        </ol>
+    </div>
+
+    <div class="table">
+        <table border="4">
+        <tr>
+        <td id="0" onclick="treasure(0)">💎</td>
+        <td id="1" onclick="treasure(1)">💎</td>
+        <td id="2" onclick="treasure(2)">💎</td>
+        <td id="3" onclick="treasure(3)">💎</td>
+        </tr>
+        <tr>
+        <td id="4" onclick="treasure(4)">💎</td>
+        <td id="5" onclick="treasure(5)">💎</td>
+        <td id="6" onclick="treasure(6)">💎</td>
+        <td id="7" onclick="treasure(7)">💎</td>
+        </tr>
+        </table>
+    </div>
+
+<div class="restart-button">
+   <button>
+    <a id="RESTART" onclick="location.reload()">RESTART!</a>
+    </button>
+</div>
+
+<script type="text/javascript" src="treasurehunt.js"></script>
+
+<footer>
+    Catherine Campos and Apolonio Ortiz
+</footer>
+</body>
+</html>
